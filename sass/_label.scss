@@ -1,0 +1,26 @@
+/**
+ * Created by zhangxin on 2017/12/29.
+ * 
+ */
+ @import "common_var";
+
+ .label{
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 0;
+    margin-right: 17px;
+    border-color: #f3f3f3;
+ }
+ .label-green{
+    color: #34cc33;
+    background-color: rgba(52, 204, 51, 0.1);
+ }
+ .label-purple{
+    color: #c66ef2;
+    background-color: rgba(198, 110, 242, 0.1);
+ }
+ .label-blue{
+    color: #0084ff;
+    background-color: rgba(0, 132, 255, 0.1);
+ }

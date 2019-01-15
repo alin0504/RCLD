@@ -1,0 +1,74 @@
+/**
+ * Created by 阿云 on 2019//14.
+ * 左侧导航的样式
+ */
+ @import "common_var";
+ .left-nav{
+    float: left;
+    width: 200px;
+    padding: 20px 0;
+    @include fullScreen;
+    background-color: $white;
+    ul.nav{
+      margin-bottom: 0;
+      border: none;
+      >li{
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        >a{
+          position: relative;
+          padding: 12px 15px;
+          &:before{
+            display: none;
+            content: ' ';
+            position: absolute;
+            left:0;
+            top:0;
+            bottom:0;
+            width: 4px;
+            background-color: $endColor;
+          }
+          &:hover,
+          &:focus{
+            background-color: $endColor;
+            color: $white;
+            &:before{
+              display: block;
+            }
+          }
+        }
+        >a,
+        .iconfont{
+          color: $font1;
+        }
+        .iconfont{
+          font-size: 16px;
+        }
+        &.active{
+          >.sub-nav{
+            display: block;
+          }
+          >a{
+            background-color: $endColor;
+            color: $white;
+            &:before{
+              display: block;
+            }
+          }
+        }
+      }
+      &.sub-nav{
+        display: none;
+        >li{
+          >a{
+            padding-left: 55px;
+            font-size: 14px;
+            color: #8a93a9;
+          }
+        }
+      }
+    }
+  }

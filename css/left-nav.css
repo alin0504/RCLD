@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/**
+ * Created by 阿云 on 2019//14.
+ * 左侧导航的样式
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.left-nav {
+  float: left;
+  width: 200px;
+  padding: 20px 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.left-nav ul.nav {
+  margin-bottom: 0;
+  border: none;
+}
+
+.left-nav ul.nav > li {
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.left-nav ul.nav > li > a {
+  position: relative;
+  padding: 12px 15px;
+}
+
+.left-nav ul.nav > li > a:before {
+  display: none;
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #6d99fe;
+}
+
+.left-nav ul.nav > li > a:hover, .left-nav ul.nav > li > a:focus {
+  background-color: #6d99fe;
+  color: #fff;
+}
+
+.left-nav ul.nav > li > a:hover:before, .left-nav ul.nav > li > a:focus:before {
+  display: block;
+}
+
+.left-nav ul.nav > li > a,
+.left-nav ul.nav > li .iconfont {
+  color: #34495e;
+}
+
+.left-nav ul.nav > li .iconfont {
+  font-size: 16px;
+}
+
+.left-nav ul.nav > li.active > .sub-nav {
+  display: block;
+}
+
+.left-nav ul.nav > li.active > a {
+  background-color: #6d99fe;
+  color: #fff;
+}
+
+.left-nav ul.nav > li.active > a:before {
+  display: block;
+}
+
+.left-nav ul.nav.sub-nav {
+  display: none;
+}
+
+.left-nav ul.nav.sub-nav > li > a {
+  padding-left: 55px;
+  font-size: 14px;
+  color: #8a93a9;
+}
