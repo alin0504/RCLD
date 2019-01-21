@@ -1,0 +1,14 @@
+/**
+ * Created by ayun on 2019/1/17.
+ * 
+ */
+ @import "common_var";
+
+ .form-horizontal{
+     .control-label{
+        font-weight:normal;
+        i{
+            color: red;
+        }
+     }
+ }

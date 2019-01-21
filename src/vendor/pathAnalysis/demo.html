@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>路径分析</title>
+    <link href="../bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/common.css" rel="stylesheet" />
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="right-content">
+        <div class="panel panel-line-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">路径分析</h3>
+            </div>
+            <div class="panel-body">
+                <div class="charts" id="pathAnalysis"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./vendor/zrender.min.js"></script>
+    <script src="./js/pathAnalysis.js"></script>
+    <script>
+        window.onload = function () {
+            var option = {
+                "data": [{
+                    "children": [{
+                        "children": [{
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 531,
+                                    "disabled": false,
+                                }, {
+                                    "children": [],
+                                    "count": 5,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 1213,
+                                "disabled": false,
+                                "name": "广告曝光",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 5,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }, {
+                                    "children": [],
+                                    "count": 3,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }, {
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 15,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "浏览-宝骏360",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }],
+                            "count": 3282,
+                            "disabled": false,
+                            "name": "广告曝光",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 8,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "抽奖按钮",
+                                }],
+                                "count": 25,
+                                "disabled": false,
+                                "name": "浏览-宝骏360",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 6,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }],
+                                "count": 21,
+                                "disabled": false,
+                                "name": "广告曝光",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 6,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }],
+                                "count": 16,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }],
+                                "count": 4,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }],
+                            "count": 93,
+                            "disabled": false,
+                            "name": "广告点击",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }],
+                                "count": 4,
+                                "disabled": false,
+                                "name": "广告曝光",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": true,
+                                    "name": "会话结束",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "页面点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }, {
+                                "children": [],
+                                "count": 0,
+                                "disabled": true,
+                                "name": "其它",
+                            }],
+                            "count": 47,
+                            "disabled": false,
+                            "name": "页面访问",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": true,
+                                    "name": "会话结束",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "抽奖按钮",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "提交留资",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "其他行为事件",
+                            }],
+                            "count": 25,
+                            "disabled": false,
+                            "name": "浏览-宝骏360",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "留资成功",
+                            }],
+                            "count": 2,
+                            "disabled": false,
+                            "name": "其它行为事件",
+                        }, {
+                            "children": [],
+                            "count": 0,
+                            "disabled": true,
+                            "name": "其它",
+                        }],
+                        "count": 3450,
+                        "disabled": false,
+                        "name": "广告曝光",
+                    }, {
+                        "children": [{
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 80,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 22,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }, {
+                                    "children": [],
+                                    "count": 20,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 165,
+                                "disabled": false,
+                                "name": "页面点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 3,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }],
+                                "count": 8,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 4,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 185,
+                            "disabled": false,
+                            "name": "其它行为事件",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 10,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 5,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }, {
+                                    "children": [],
+                                    "count": 3,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 34,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 18,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }, {
+                                    "children": [],
+                                    "count": 4,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "留资失败",
+                                }],
+                                "count": 25,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 6,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }, {
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "点击摇出免单豪礼按钮",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 18,
+                                "disabled": false,
+                                "name": "页面点击",
+                            }],
+                            "count": 159,
+                            "disabled": false,
+                            "name": "页面访问",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 9,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }, {
+                                    "children": [],
+                                    "count": 4,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }, {
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 21,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 13,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 13,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 7,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }],
+                                "count": 9,
+                                "disabled": false,
+                                "name": "页面点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "点击中奖名单按钮",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": true,
+                                    "name": "会话结束",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }, {
+                                "children": [],
+                                "count": 0,
+                                "disabled": true,
+                                "name": "其它",
+                            }],
+                            "count": 106,
+                            "disabled": false,
+                            "name": "页面点击",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }],
+                            "count": 19,
+                            "disabled": false,
+                            "name": "广告点击",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "浏览MOBILE-车型页",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "页面访问",
+                            }],
+                            "count": 11,
+                            "disabled": false,
+                            "name": "浏览MOBILE-车型页",
+                        }, {
+                            "children": [],
+                            "count": 0,
+                            "disabled": true,
+                            "name": "其它",
+                        }],
+                        "count": 486,
+                        "disabled": false,
+                        "name": "页面访问",
+                    }, {
+                        "children": [{
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 8,
+                                    "disabled": true,
+                                    "name": "会话结束",
+                                }],
+                                "count": 8,
+                                "disabled": false,
+                                "name": "页面点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面访问",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 63,
+                            "disabled": false,
+                            "name": "页面访问",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 5,
+                                "disabled": false,
+                                "name": "广告点击",
+                            }],
+                            "count": 34,
+                            "disabled": false,
+                            "name": "广告点击",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告曝光",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "广告曝光",
+                            }],
+                            "count": 4,
+                            "disabled": false,
+                            "name": "广告曝光",
+                        }, {
+                            "children": [{
+                                "children": [],
+                                "count": 1,
+                                "disabled": true,
+                                "name": "会话结束",
+                            }],
+                            "count": 1,
+                            "disabled": false,
+                            "name": "浏览-宝骏360",
+                        }],
+                        "count": 102,
+                        "disabled": false,
+                        "name": "广告点击",
+                    }, {
+                        "children": [{
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 4,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }],
+                                "count": 8,
+                                "disabled": false,
+                                "name": "浏览-宝骏360",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其他行为事件",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "抽奖按钮",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "广告点击",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "广告曝光",
+                            }],
+                            "count": 22,
+                            "disabled": false,
+                            "name": "浏览-宝骏360",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "浏览-宝骏360",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其他行为事件",
+                                }],
+                                "count": 3,
+                                "disabled": false,
+                                "name": "浏览-宝骏360",
+                            }, {
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "抽奖按钮",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "抽奖按钮",
+                            }],
+                            "count": 14,
+                            "disabled": false,
+                            "name": "抽奖按钮",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其他行为事件",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "提交留资",
+                            }],
+                            "count": 4,
+                            "disabled": false,
+                            "name": "其他行为事件",
+                        }, {
+                            "children": [{
+                                "children": [],
+                                "count": 2,
+                                "disabled": true,
+                                "name": "会话结束",
+                            }],
+                            "count": 2,
+                            "disabled": false,
+                            "name": "开始按钮",
+                        }, {
+                            "children": [{
+                                "children": [],
+                                "count": 1,
+                                "disabled": true,
+                                "name": "会话结束",
+                            }],
+                            "count": 1,
+                            "disabled": false,
+                            "name": "点击抽奖",
+                        }, {
+                            "children": [],
+                            "count": 0,
+                            "disabled": true,
+                            "name": "其它",
+                        }],
+                        "count": 43,
+                        "disabled": false,
+                        "name": "浏览-宝骏360",
+                    }, {
+                        "children": [{
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }, {
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "留资失败",
+                                }],
+                                "count": 3,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 7,
+                            "disabled": false,
+                            "name": "留资成功",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 1,
+                                    "disabled": false,
+                                    "name": "其它行为事件",
+                                }],
+                                "count": 1,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 4,
+                            "disabled": false,
+                            "name": "其它行为事件",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 3,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 3,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 3,
+                            "disabled": false,
+                            "name": "页面访问",
+                        }, {
+                            "children": [{
+                                "children": [{
+                                    "children": [],
+                                    "count": 2,
+                                    "disabled": false,
+                                    "name": "页面点击",
+                                }],
+                                "count": 2,
+                                "disabled": false,
+                                "name": "其它行为事件",
+                            }],
+                            "count": 2,
+                            "disabled": false,
+                            "name": "页面点击",
+                        }],
+                        "count": 16,
+                        "disabled": false,
+                        "name": "其它行为事件",
+                    }, {
+                        "children": [],
+                        "count": 0,
+                        "disabled": true,
+                        "name": "其它",
+                    }],
+                    "count": 4116,
+                    "disabled": false,
+                    "name": "会话开始",
+                }]
+            };
+            var a = new treeCharts(document.getElementById("pathAnalysis"));
+            a.setOption(option);
+        }
+    </script>
+</body>
+</html>

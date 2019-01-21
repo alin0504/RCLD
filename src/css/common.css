@@ -1,0 +1,658 @@
+@charset "UTF-8";
+/**
+ * Created by zhangxin on 2017/12/26.
+ * 
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+body {
+  position: relative;
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,微软雅黑,STHeitiSC-Light,simsun,宋体,WenQuanYi Zen Hei,WenQuanYi Micro Hei,'sans-serif';
+  color: #666666;
+  font-size: 14px;
+  background-color: #ededed;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  overflow-x: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #b8b8b8;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #b8b8b8;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+pre {
+  background-color: #f5f5f5;
+  white-space: pre-wrap;
+  /*css-3*/
+  white-space: -moz-pre-wrap;
+  /*Mozilla,since1999*/
+  white-space: -pre-wrap;
+  /*Opera4-6*/
+  white-space: -o-pre-wrap;
+  /*Opera7*/
+  word-wrap: break-word;
+  /*InternetExplorer5.5+*/
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.w100 {
+  width: 100px;
+}
+
+.mtb20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.color {
+  color: #3c7af9;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.negative {
+  color: #fd7a59;
+}
+
+.footer {
+  color: #777;
+  padding: 10px 0;
+  background-color: #26303a;
+}
+
+.footer-top .about > div {
+  min-height: 110px;
+  margin-bottom: 10px;
+}
+
+.footer-top .about > div h4 {
+  color: #563d7c;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #777;
+}
+
+/*面板*/
+.panel-title .btn-right-title {
+  line-height: 34px;
+}
+
+/*按钮*/
+.btn-box .btn + .btn {
+  margin-left: 15px;
+}
+
+.bootstrap-select.form-control:not([class*=col-]) .btn {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.bootstrap-select.form-control:not([class*=col-]) .btn .caret {
+  right: 10px;
+}
+
+.checkbox-box {
+  padding-top: 7px;
+}
+
+/*表单*/
+.form-control {
+  margin-right: 20px;
+  float: left;
+}
+
+/*header部分*/
+.navbar-linear-gradient {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  background-image: -webkit-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, 0 0, left right, from(#024eff), to(#6d99fe));
+  background-image: -o-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, left top, right top, from(#024eff), to(#6d99fe));
+  background-image: -webkit-linear-gradient(left, #024eff, #6d99fe);
+  background-image: -o-linear-gradient(left, #024eff, #6d99fe);
+  background-image: linear-gradient(to right, #024eff, #6d99fe);
+}
+
+.navbar-linear-gradient .navbar-brand {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.navbar-linear-gradient .navbar-nav {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.navbar-linear-gradient .navbar-nav > li > a,
+.navbar-linear-gradient .navbar-nav > li > span {
+  display: block;
+  padding: 19px 5px;
+  color: #fff;
+}
+
+.navbar-linear-gradient .navbar-nav > li > a:hover, .navbar-linear-gradient .navbar-nav > li > a:focus, .navbar-linear-gradient .navbar-nav > li > a:active,
+.navbar-linear-gradient .navbar-nav > li > span:hover,
+.navbar-linear-gradient .navbar-nav > li > span:focus,
+.navbar-linear-gradient .navbar-nav > li > span:active {
+  background-color: transparent;
+}
+
+.navbar-linear-gradient .navbar-nav > li > a > i,
+.navbar-linear-gradient .navbar-nav > li > a > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-linear-gradient .navbar-nav.nav-menu > li > a {
+  padding: 20px;
+}
+
+.navbar-linear-gradient .navbar-nav.nav-menu > li > a:hover, .navbar-linear-gradient .navbar-nav.nav-menu > li > a:focus, .navbar-linear-gradient .navbar-nav.nav-menu > li > a:active {
+  background-color: #3c7af9;
+}
+
+.navbar-linear-gradient .navbar-nav.nav-menu > li.active {
+  background-color: #3c7af9;
+}
+
+.page-wrapper {
+  position: relative;
+  height: -webkit-calc(100% - 141px);
+  height: calc(100% - 141px);
+  padding: 20px;
+}
+
+.page-wrapper:before, .page-wrapper:after {
+  content: ' ';
+  display: table;
+}
+
+.page-wrapper:after {
+  clear: both;
+}
+
+.page-wrapper .right-content {
+  height: 100%;
+  padding: 0 0 0 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.page-wrapper .right-content .page-content {
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.page-wrapper .right-content .page-content .personnel-box {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -30%);
+      -ms-transform: translate(-50%, -30%);
+       -o-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+}
+
+.page-wrapper .left-nav + .right-content {
+  margin-left: 200px;
+}
+
+.page-wrappers {
+  position: relative;
+  height: -webkit-calc(100% - 61px);
+  height: calc(100% - 61px);
+  overflow-y: auto;
+}
+
+.page-wrappers:before, .page-wrappers:after {
+  content: ' ';
+  display: table;
+}
+
+.page-wrappers:after {
+  clear: both;
+}
+
+.page-wrappers .right-content .container {
+  width: 1200px;
+}
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
+.thumbnail:hover, .thumbnail:focus, .thumbnail:active {
+  border: 2px solid #3c7af9 !important;
+}
+
+.thumbnail.active {
+  border: 2px solid #3c7af9 !important;
+}
+
+.screen-title {
+  line-height: 34px;
+  color: #3c7af9;
+  font-size: 16px;
+}
+
+.filter-item {
+  line-height: 34px;
+  margin-left: 25px;
+}
+
+.page-contents {
+  background-color: #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+.page-contents .screen-box {
+  padding: 10px;
+}
+
+.page-contents .screen-box .screen-item {
+  line-height: 40px;
+  position: relative;
+}
+
+.page-contents .screen-box .screen-item .screen-txt {
+  float: left;
+  padding-right: 15px;
+}
+
+.page-contents .screen-box .screen-item ul > li {
+  float: left;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.page-contents .screen-box .screen-item ul > li:hover, .page-contents .screen-box .screen-item ul > li:focus, .page-contents .screen-box .screen-item ul > li:active {
+  color: #3c7af9;
+}
+
+.page-contents .screen-box .screen-item ul > li.active {
+  color: #3c7af9;
+}
+
+.page-contents .screen-box .screen-item .screnn-more {
+  position: absolute;
+  right: 20px;
+  top: 1px;
+  cursor: pointer;
+  color: #3c7af9;
+}
+
+.content-box {
+  margin: 0 -20px;
+}
+
+.content-box .table-list {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.content-box .table-list tr {
+  border-bottom: 1px solid #ededed;
+}
+
+.content-box .table-list tr .td1 {
+  width: 5%;
+  text-align: center;
+}
+
+.content-box .table-list tr .td2 {
+  width: 10%;
+}
+
+.content-box .table-list tr .td2 p {
+  margin: 10px;
+}
+
+.content-box .table-list tr .td3 {
+  width: 57%;
+  line-height: 30px;
+}
+
+.content-box .table-list tr .td3 .table-name {
+  font-size: 16px;
+}
+
+.content-box .table-list tr .td3 .table-name span:nth-child(1) {
+  font-weight: 500;
+  color: #3c7af9;
+  cursor: pointer;
+}
+
+.content-box .table-list tr .td3 .table-name span:nth-child(2) {
+  font-size: 14px;
+  color: #34495e;
+  margin-left: 25px;
+}
+
+.content-box .table-list tr .td3 .contactCompany span {
+  color: #8c989d;
+  margin-right: 20px;
+}
+
+.content-box .table-list tr .td3 .contactCompany ul {
+  width: 60%;
+}
+
+.content-box .table-list tr .td3 .contactCompany ul > li {
+  float: left;
+  cursor: pointer;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+.content-box .table-list tr .td3 .contactCompany ul > li span:nth-child(1) {
+  color: #3c7af9;
+}
+
+.content-box .table-list tr .td3 .contactCompany ul > li span:nth-child(2) {
+  color: #8c989d;
+}
+
+.content-box .table-list tr .td3 .table-label {
+  clear: both;
+  font-size: 13px;
+}
+
+.content-box .table-list tr .td3 .table-label label {
+  color: #8c989d;
+  margin-right: 15px;
+}
+
+.add-theme {
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.add-theme .form-control {
+  width: 75%;
+  margin-top: 10px;
+}
+
+.radar-theme {
+  text-align: center;
+  border: 1px solid #ededed;
+}
+
+.radar-theme > li {
+  line-height: 30px;
+  border-bottom: 1px solid #ededed;
+}
+
+.radar-theme > li:last-child {
+  border-bottom: 0;
+}
+
+/**
+ * Created by 阿云 on 2019//14.
+ * 左侧导航的样式
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.left-nav {
+  float: left;
+  width: 200px;
+  padding: 20px 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.left-nav ul.nav {
+  margin-bottom: 0;
+  border: none;
+}
+
+.left-nav ul.nav > li {
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.left-nav ul.nav > li > a {
+  position: relative;
+  padding: 12px 15px;
+}
+
+.left-nav ul.nav > li > a:before {
+  display: none;
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #6d99fe;
+}
+
+.left-nav ul.nav > li > a:hover, .left-nav ul.nav > li > a:focus {
+  background-color: #6d99fe;
+  color: #fff;
+}
+
+.left-nav ul.nav > li > a:hover:before, .left-nav ul.nav > li > a:focus:before {
+  display: block;
+}
+
+.left-nav ul.nav > li > a,
+.left-nav ul.nav > li .iconfont {
+  color: #34495e;
+}
+
+.left-nav ul.nav > li .iconfont {
+  font-size: 16px;
+}
+
+.left-nav ul.nav > li.active > .sub-nav {
+  display: block;
+}
+
+.left-nav ul.nav > li.active > a {
+  background-color: #6d99fe;
+  color: #fff;
+}
+
+.left-nav ul.nav > li.active > a:before {
+  display: block;
+}
+
+.left-nav ul.nav.sub-nav {
+  display: none;
+}
+
+.left-nav ul.nav.sub-nav > li > a {
+  padding-left: 55px;
+  font-size: 14px;
+  color: #8a93a9;
+}
+
+/**
+ * Created by zhangxin on 2017/12/29.
+ * 
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.btn {
+  border-radius: 0;
+  margin-left: 15px;
+}
+
+.btn .iconfont {
+  font-size: inherit;
+}
+
+.btn-search {
+  color: #fff;
+  background-image: -webkit-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, 0 0, left right, from(#024eff), to(#6d99fe));
+  background-image: -o-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, left top, right top, from(#024eff), to(#6d99fe));
+  background-image: -webkit-linear-gradient(left, #024eff, #6d99fe);
+  background-image: -o-linear-gradient(left, #024eff, #6d99fe);
+  background-image: linear-gradient(to right, #024eff, #6d99fe);
+}
+
+.btn-search:hover, .btn-search:focus, .btn-search:active {
+  background-image: -webkit-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, 0 0, left right, from(#024eff), to(#6d99fe));
+  background-image: -o-linear-gradient(to right, #024eff, #6d99fe);
+  background-image: -webkit-gradient(linear, left top, right top, from(#024eff), to(#6d99fe));
+  background-image: -webkit-linear-gradient(left, #024eff, #6d99fe);
+  background-image: -o-linear-gradient(left, #024eff, #6d99fe);
+  background-image: linear-gradient(to right, #024eff, #6d99fe);
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #8590a7;
+  border: 1px solid #ededed;
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+  background-color: #fff;
+  color: #8590a7;
+}
+
+/**
+ * Created by zhangxin on 2017/12/29.
+ * 
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.label {
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 0;
+  margin-right: 17px;
+  border-color: #f3f3f3;
+}
+
+.label-green {
+  color: #34cc33;
+  background-color: rgba(52, 204, 51, 0.1);
+}
+
+.label-purple {
+  color: #c66ef2;
+  background-color: rgba(198, 110, 242, 0.1);
+}
+
+.label-blue {
+  color: #0084ff;
+  background-color: rgba(0, 132, 255, 0.1);
+}
+
+/**
+ * Created by ayun on 2019/1/17.
+ * 
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.form-horizontal .control-label {
+  font-weight: normal;
+}
+
+.form-horizontal .control-label i {
+  color: red;
+}
