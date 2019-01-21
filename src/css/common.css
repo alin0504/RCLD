@@ -480,10 +480,6 @@ pre {
   border-bottom: 0;
 }
 
-.summary p {
-  line-height: 30px;
-}
-
 .summary p:nth-child(1) {
   font-size: 18px;
   color: #3c7af9;
@@ -503,12 +499,12 @@ pre {
 
 .partner .partner-detail {
   border: 1px solid #ededed;
+  height: 52px;
 }
 
 .partner .partner-detail p:nth-child(1) {
   float: left;
   width: 50px;
-  height: 50px;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
