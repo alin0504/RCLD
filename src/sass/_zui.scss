@@ -52,6 +52,10 @@ pre{
 .text-right{
     text-align: right !important;
 }
+.textarea{
+    width: 100%;
+    resize: none;
+}
 // 辅助类
 .w200{
     width: 200px;
@@ -62,6 +66,9 @@ pre{
 .mtb20{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.mb10{
+    margin-bottom: 10px;
 }
 .color{
     color: $color;
@@ -74,6 +81,12 @@ pre{
 }
 .negative{
     color: $negative;
+}
+.positive{
+    color: $positive;
+}
+.neutral{
+    color: $neutral;
 }
 .footer {
     color: #777;

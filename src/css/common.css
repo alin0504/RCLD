@@ -91,6 +91,11 @@ pre {
   text-align: right !important;
 }
 
+.textarea {
+  width: 100%;
+  resize: none;
+}
+
 .w200 {
   width: 200px;
 }
@@ -102,6 +107,10 @@ pre {
 .mtb20 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
 }
 
 .color {
@@ -118,6 +127,14 @@ pre {
 
 .negative {
   color: #fd7a59;
+}
+
+.positive {
+  color: #00dbba;
+}
+
+.neutral {
+  color: #3c7af9;
 }
 
 .footer {
@@ -463,6 +480,88 @@ pre {
   border-bottom: 0;
 }
 
+.summary p {
+  line-height: 30px;
+}
+
+.summary p:nth-child(1) {
+  font-size: 18px;
+  color: #3c7af9;
+}
+
+.summary p:nth-child(2) {
+  font-size: 14px;
+}
+
+.summary p:nth-child(2) span {
+  margin-right: 30px;
+}
+
+.partner {
+  padding: 20px;
+}
+
+.partner .partner-detail {
+  border: 1px solid #ededed;
+}
+
+.partner .partner-detail p:nth-child(1) {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.partner .partner-detail p:nth-child(2) span {
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.partner .partner-detail p:nth-child(2) .relevance-name {
+  font-size: 14px;
+  color: #000;
+}
+
+.partner .partner-detail p:nth-child(2) .relevance-company {
+  font-size: 12px;
+  color: #8c989d;
+}
+
+.hotspot ul {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  border-bottom: 1px solid #ededed;
+}
+
+.hotspot ul > li {
+  float: left;
+  text-align: center;
+}
+
+.hotspot ul > li:nth-child(1) {
+  width: 5%;
+}
+
+.hotspot ul > li:nth-child(2) {
+  width: 10%;
+}
+
+.hotspot ul > li:nth-child(3) {
+  text-align: left;
+  width: 75%;
+}
+
+.hotspot ul > li:nth-child(4) {
+  width: 10%;
+}
+
 /**
  * Created by 阿云 on 2019//14.
  * 左侧导航的样式
@@ -655,4 +754,41 @@ pre {
 
 .form-horizontal .control-label i {
   color: red;
+}
+
+/**
+ * Created by ayun on 2019/1/21.
+ * 
+ */
+/**
+ * Created by ayun on 2019/1/14
+ * 
+ */
+/**
+ * 混合器声明 start
+*/
+.nav-tab {
+  border-bottom: 1px solid #ededed;
+}
+
+.nav-tab li {
+  float: left;
+  padding: 8px 20px 0 8px;
+  color: #34495e;
+}
+
+.nav-tab li:hover a, .nav-tab li:focus a, .nav-tab li:active a {
+  background-color: #fff;
+  color: #3c7af9;
+  border-bottom: 2px solid #3c7af9;
+}
+
+.nav-tab li.active a {
+  background-color: #fff;
+  color: #3c7af9;
+  border-bottom: 2px solid #3c7af9;
+}
+
+.tab-content {
+  padding: 20px;
 }

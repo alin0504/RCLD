@@ -250,10 +250,82 @@
 }
 // 人才画像
 .summary{
-  
+  p{
+    line-height: 30px;
+    &:nth-child(1){
+      font-size: 18px;
+      color: $color;
+    }
+    &:nth-child(2){
+      font-size: 14px;
+      span{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+.partner{
+  padding: 20px;
+  .partner-detail{
+    border: 1px solid $border;
+    p{
+      &:nth-child(1){
+        float: left;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #ccc;
+        color: $white;
+      }
+      &:nth-child(2){
+        span{
+          display: inline-block;
+          padding: 4px;
+          cursor: pointer;
+          margin-left: 5px;
+        }
+        .relevance-name{
+          font-size: 14px;
+          color: #000;
+      }
+      .relevance-company{
+        font-size: 12px;
+        color: $font2;
+      }
+      }
+    }
+  }
+}
+.hotspot{
+  ul{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid $border;
+    > li{
+      float: left;
+      text-align: center;
+      &:nth-child(1){
+        width: 5%;
+      }
+      &:nth-child(2){
+        width: 10%;
+      }
+      &:nth-child(3){
+        text-align: left;
+        width: 75%;
+      }
+      &:nth-child(4){
+        width: 10%;
+      }
+    }
+  }
 }
 @import "left-nav";
 @import "button";
 @import "label";
 @import "form";
+@import "tab";
 
