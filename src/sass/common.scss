@@ -96,6 +96,7 @@
   }
 }
 .thumbnail{
+  height: 150px;
   padding: 0;
   @include borderRadius(0);
   &:hover,
@@ -105,6 +106,9 @@
   }
   &.active{
     border: 2px solid $color !important;
+  }
+  img{
+    padding: 10px 10px 0 10px;
   }
 }
 // 人才搜猎详情

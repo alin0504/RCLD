@@ -113,6 +113,14 @@ pre {
   margin-bottom: 10px;
 }
 
+.mt25 {
+  margin-top: 25px;
+}
+
+.mt23 {
+  margin-top: 23px;
+}
+
 .color {
   color: #3c7af9;
 }
@@ -308,6 +316,7 @@ pre {
 }
 
 .thumbnail {
+  height: 150px;
   padding: 0;
   border-radius: 0;
 }
@@ -318,6 +327,10 @@ pre {
 
 .thumbnail.active {
   border: 2px solid #3c7af9 !important;
+}
+
+.thumbnail img {
+  padding: 10px 10px 0 10px;
 }
 
 .screen-title {
