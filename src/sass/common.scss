@@ -179,7 +179,7 @@
         }
       }
       .td3{
-        width: 57%;
+        width: 50%;
         line-height: 30px;
         .table-name{
           font-size: 16px;
@@ -225,6 +225,22 @@
           label{
             color: $title3;
             margin-right: 15px;
+          }
+        }
+      }
+      .td4{
+        position: relative;
+        .creat_time{
+          position: absolute;
+          right: 20px;
+          top: 10px;
+          span{
+            &:nth-child(1){
+              margin-right: 50px;
+            }
+            .close{
+              cursor: pointer;
+            }
           }
         }
       }
@@ -326,6 +342,7 @@
     }
   }
 }
+//触达列表
 @import "left-nav";
 @import "button";
 @import "label";

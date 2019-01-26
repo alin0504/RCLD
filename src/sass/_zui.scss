@@ -63,6 +63,12 @@ pre{
 .w100{
     width: 100px;
 }
+.mt0{
+    margin-top: 0 !important;
+}
+.mb0{
+    margin-bottom: 0 !important;
+}
 .mtb20{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -85,6 +91,9 @@ pre{
 .mr20{
     margin-right: 20px;
 }
+.p20{
+    padding: 20px;
+}
 .negative{
     color: $negative;
 }
@@ -93,6 +102,11 @@ pre{
 }
 .neutral{
     color: $neutral;
+}
+.strip{
+    height: 20px;
+    margin: 0 -20px;
+    background-color: $border;
 }
 .footer {
     color: #777;

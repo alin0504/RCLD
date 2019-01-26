@@ -104,6 +104,14 @@ pre {
   width: 100px;
 }
 
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
 .mtb20 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -133,6 +141,10 @@ pre {
   margin-right: 20px;
 }
 
+.p20 {
+  padding: 20px;
+}
+
 .negative {
   color: #fd7a59;
 }
@@ -143,6 +155,12 @@ pre {
 
 .neutral {
   color: #3c7af9;
+}
+
+.strip {
+  height: 20px;
+  margin: 0 -20px;
+  background-color: #ededed;
 }
 
 .footer {
@@ -414,7 +432,7 @@ pre {
 }
 
 .content-box .table-list tr .td3 {
-  width: 57%;
+  width: 50%;
   line-height: 30px;
 }
 
@@ -466,6 +484,24 @@ pre {
 .content-box .table-list tr .td3 .table-label label {
   color: #8c989d;
   margin-right: 15px;
+}
+
+.content-box .table-list tr .td4 {
+  position: relative;
+}
+
+.content-box .table-list tr .td4 .creat_time {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.content-box .table-list tr .td4 .creat_time span:nth-child(1) {
+  margin-right: 50px;
+}
+
+.content-box .table-list tr .td4 .creat_time span .close {
+  cursor: pointer;
 }
 
 .add-theme {
@@ -670,8 +706,10 @@ pre {
  * 混合器声明 start
 */
 .btn {
+  font-size: 13px;
   border-radius: 0;
-  margin-left: 15px;
+  margin-left: 10px;
+  padding: 4px 8px;
 }
 
 .btn .iconfont {
@@ -680,35 +718,46 @@ pre {
 
 .btn-search {
   color: #fff;
-  background-image: -webkit-linear-gradient(to right, #024eff, #6d99fe);
-  background-image: -webkit-gradient(linear, 0 0, left right, from(#024eff), to(#6d99fe));
-  background-image: -o-linear-gradient(to right, #024eff, #6d99fe);
-  background-image: -webkit-gradient(linear, left top, right top, from(#024eff), to(#6d99fe));
-  background-image: -webkit-linear-gradient(left, #024eff, #6d99fe);
-  background-image: -o-linear-gradient(left, #024eff, #6d99fe);
-  background-image: linear-gradient(to right, #024eff, #6d99fe);
+  background-color: #3c7af9;
 }
 
 .btn-search:hover, .btn-search:focus, .btn-search:active {
-  background-image: -webkit-linear-gradient(to right, #024eff, #6d99fe);
-  background-image: -webkit-gradient(linear, 0 0, left right, from(#024eff), to(#6d99fe));
-  background-image: -o-linear-gradient(to right, #024eff, #6d99fe);
-  background-image: -webkit-gradient(linear, left top, right top, from(#024eff), to(#6d99fe));
-  background-image: -webkit-linear-gradient(left, #024eff, #6d99fe);
-  background-image: -o-linear-gradient(left, #024eff, #6d99fe);
-  background-image: linear-gradient(to right, #024eff, #6d99fe);
   color: #fff;
+  background-color: #3c7af9;
+}
+
+.btn-line {
+  color: #3c7af9;
+  border: 1px solid #3c7af9;
+  background-color: #fff;
+}
+
+.btn-line:hover, .btn-line:focus, .btn-line:active {
+  color: #3c7af9;
+  border: 1px solid #3c7af9;
+  background-color: #fff;
 }
 
 .btn-white {
   background-color: #fff;
   color: #8590a7;
-  border: 1px solid #ededed;
+  border: 1px solid #8590a7;
 }
 
 .btn-white:hover, .btn-white:focus, .btn-white:active {
   background-color: #fff;
   color: #8590a7;
+}
+
+.btn-detail {
+  background-color: #00dbba;
+  color: #fff;
+  border: 1px solid #00dbba;
+}
+
+.btn-detail:hover, .btn-detail:focus, .btn-detail:active {
+  background-color: #00dbba;
+  color: #fff;
 }
 
 /**
